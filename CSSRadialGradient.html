@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Radial Gradient</title>
+    <style>
+        #div1{
+            height: 500px;
+            border: 1px soid black;
+            background-image: radial-gradient(green,yellow,red);     /*   //min two colors are required
+                                                                                    bydefault shape is eclipse*/
+
+             /* shape */
+            background-image: radial-gradient(circle, green,yellow,red);
+
+            /* color weightage */
+            background-image: radial-gradient( green 20%,yellow 20%,red 60%);
+             /*
+            background-image: linear-gradient(to bottom, green,yellow,red);
+            background-image: linear-gradient(to bottom right, green,yellow,red);
+            background-image: linear-gradient(200deg, green,yellow,red); */ 
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    
+</body>
+</html>

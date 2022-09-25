@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+
+    <style>
+       /* Display- block and inline are default */
+
+       .display{
+        border: 1px solid black;
+        width: 50%
+        height: 100px;
+
+        display: inline;
+        display: inline-block;
+       }
+       #div1{
+        /* display: none;                             it will remove*/
+        visibility: hidden;                           /*it will hide only*/
+       }
+
+    </style>
+</head>
+<body>
+    <div class="display" id="div1">
+        This is a div1
+    </div>
+    <div class="display">
+        This is a div2
+    </div>
+</body>
+</html>

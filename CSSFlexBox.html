@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Box</title>
+
+    <style>
+        .flex-container{
+            background-color: indianred;
+            display: flex;
+            /* flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse; */
+            flex-wrap: nowrap;
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+
+            flex-flow: row wrap;
+
+            /* justify-content: end; */
+            justify-content: center;
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+
+            height: 400px;
+            /* align-items: stretch; */
+            align-items: center;
+            /* align-items: flex-start; */
+        }
+        .flex-child{
+            background-color: wheat;
+            margin:20px;
+            padding: 20px;
+            width: 100px;
+            /* display: inline-block; */        /*on the place of this we can use flex*/
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-child">One</div>
+        <div class="flex-child">Two</div>
+        <div class="flex-child">Three</div>
+        <!-- <div class="flex-child">Four</div>
+        <div class="flex-child">Five</div>
+        <div class="flex-child">Six</div>
+        <div class="flex-child">Seven</div>
+        <div class="flex-child">Eight</div> -->
+    </div>
+</body>
+</html>

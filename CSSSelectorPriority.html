@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Selecots Priority </title>
+
+    <style>
+        h1{
+            color: red;         /*element selector      //it will get last priority*/
+        }
+        #id-color{
+            color: yellow;      /*id selector           //it will get 1st priority */
+        }
+        .class-color{
+            color: green;       /*class selector       //it will get 2nd priority */
+        }
+    </style>
+</head>
+<body>
+    <h1 id="id-color" class="class-color">Heading h1</h1>
+</body>
+</html>
